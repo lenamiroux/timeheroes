@@ -5,4 +5,7 @@ app = Flask(__name__)
 
 @app.route("/locations")
 def get_locations():
-    return []
+    return "api"
+    
+def register_request_data()
+    return "f"
