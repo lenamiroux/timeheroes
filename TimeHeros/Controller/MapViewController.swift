@@ -12,33 +12,38 @@ import Mapbox
 class MapViewController: UIViewController {
 
 	@IBOutlet weak var mapView: MGLMapView!
+	
+	var coordinates : [CLLocationCoordinate2D] = []
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		mapView.delegate = self
-		let coordinates: (latitude: Double?, longitude: Double?) = (latitude: 40.7326808, longitude: -73.9843407)
+		let coordinate = CLLocationCoordinate2D(latitude: 40.7326808, longitude: -73.9843407)
 		
-		mapView.setCenter(CLLocationCoordinate2D(latitude: 40.7326808, longitude: -73.9843407), zoomLevel: 12, animated: false)
+		mapView.setCenter(coordinate, zoomLevel: 12, animated: false)
 		
-		addAnnotation(with: coordinates)
+		addAnnotation(withCoordinate: coordinate, title: "Custom Title", subtitle: "Custon subtitle", reuseIdentifier: nil)
 	}
 
 }
 
 extension MapViewController {
-	func addAnnotation(with coordinates: (latitude: Double?, longitude: Double?)) {
+	func addAnnotation(withCoordinate: CLLocationCoordinate2D?, title: String?, subtitle: String?, reuseIdentifier: String?) {
 		
-		guard let latitude = coordinates.latitude, let longitude = coordinates.longitude else {
+		guard let coordinate = withCoordinate else {
 			return
 		}
+		coordinates.append(coordinate)
+
+		let anottation = Annotation(coordinate: coordinate, title: title, subtitle: subtitle)
 		
-		let anottation = Annotation()
-		anottation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-		anottation.title = "Hello world!"
-		anottation.subtitle = "Welcome to my marker"
-		
+		if let identifier = reuseIdentifier {
+			anottation.image = UIImage(named: identifier)
+			anottation.reuseIdentifier = identifier
+		}		
 		mapView.addAnnotation(anottation)
 	}
+	
 }
 
 extension MapViewController: MGLMapViewDelegate {
@@ -52,5 +57,14 @@ extension MapViewController: MGLMapViewDelegate {
 	func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
 		print(#function)
 		return true
+	}
+	
+	func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
+		
+		guard let identifier = (annotation as? Annotation)?.reuseIdentifier, let image = UIImage(named: identifier) else {
+			return nil
+		}
+		
+		return MGLAnnotationImage(image: image, reuseIdentifier: identifier)
 	}
 }
