@@ -22,7 +22,7 @@ class MapViewController: UIViewController {
 		
 		mapView.setCenter(coordinate, zoomLevel: 12, animated: false)
 		
-		addAnnotation(withCoordinate: coordinate, title: "Custom Title", subtitle: "Custon subtitle", reuseIdentifier: nil)
+		addAnnotation(withCoordinate: coordinate, title: "Custom Title", subtitle: "Custon subtitle", reuseIdentifier: "filtros")
 	}
 
 }
