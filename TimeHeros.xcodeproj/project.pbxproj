@@ -10,11 +10,12 @@
 		46757182D06778C73F73EEA5 /* Pods_TimeHerosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30FDB52EC90EFAC1C4D8B4 /* Pods_TimeHerosTests.framework */; };
 		6CC5BA5B02C6A5149D7CDD0F /* Pods_TimeHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */; };
 		9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE1209E408300827CF0 /* AppDelegate.swift */; };
-		9F2DCBE4209E408300827CF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE3209E408300827CF0 /* ViewController.swift */; };
+		9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE3209E408300827CF0 /* MapViewController.swift */; };
 		9F2DCBE7209E408300827CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE5209E408300827CF0 /* Main.storyboard */; };
 		9F2DCBE9209E408500827CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE8209E408500827CF0 /* Assets.xcassets */; };
 		9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */; };
 		9F2DCBF7209E408600827CF0 /* TimeHerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBF6209E408600827CF0 /* TimeHerosTests.swift */; };
+		9F876106209E490D0048BF82 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F876105209E490D0048BF82 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 		961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeHeros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBDE209E408300827CF0 /* TimeHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBE1209E408300827CF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F2DCBE3209E408300827CF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F2DCBE3209E408300827CF0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9F2DCBE6209E408300827CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F2DCBE8209E408500827CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2DCBEB209E408500827CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		9F2DCBF2209E408500827CF0 /* TimeHerosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeHerosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBF6209E408600827CF0 /* TimeHerosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHerosTests.swift; sourceTree = "<group>"; };
 		9F2DCBF8209E408600827CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F876105209E490D0048BF82 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,7 @@
 		9F876102209E48120048BF82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9F2DCBE3209E408300827CF0 /* ViewController.swift */,
+				9F2DCBE3209E408300827CF0 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +132,7 @@
 		9F876103209E482A0048BF82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9F876105209E490D0048BF82 /* Annotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,7 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F2DCBE4209E408300827CF0 /* ViewController.swift in Sources */,
+				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
+				9F876106209E490D0048BF82 /* Annotation.swift in Sources */,
 				9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
