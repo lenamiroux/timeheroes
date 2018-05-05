@@ -100,11 +100,11 @@
 		9F2DCBE0209E408300827CF0 /* TimeHeros */ = {
 			isa = PBXGroup;
 			children = (
+				9F876104209E48310048BF82 /* View */,
+				9F876103209E482A0048BF82 /* Model */,
+				9F876102209E48120048BF82 /* Controller */,
 				9F2DCBE1209E408300827CF0 /* AppDelegate.swift */,
-				9F2DCBE3209E408300827CF0 /* ViewController.swift */,
-				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
 				9F2DCBE8209E408500827CF0 /* Assets.xcassets */,
-				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
 				9F2DCBED209E408500827CF0 /* Info.plist */,
 			);
 			path = TimeHeros;
@@ -117,6 +117,30 @@
 				9F2DCBF8209E408600827CF0 /* Info.plist */,
 			);
 			path = TimeHerosTests;
+			sourceTree = "<group>";
+		};
+		9F876102209E48120048BF82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F2DCBE3209E408300827CF0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F876103209E482A0048BF82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F876104209E48310048BF82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
+				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EC822E14CF2DFB1DC1B10945 /* Frameworks */ = {
@@ -456,7 +480,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHeros/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHeros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -472,7 +499,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHeros/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHeros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,7 +519,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHerosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHerosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -507,7 +541,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHerosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHerosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
