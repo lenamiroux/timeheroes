@@ -6,7 +6,9 @@ target 'TimeHeros' do
   use_frameworks!
 
   # Pods for TimeHeros
-  pod 'Mapbox-iOS-SDK', '~> 4.0'
+  # pod 'Mapbox-iOS-SDK', '~> 4.0'
+  pod 'MapboxNavigation', '~> 0.16.2'
+
   target 'TimeHerosTests' do
     inherit! :search_paths
     # Pods for testing
