@@ -46,7 +46,6 @@ class MapViewController: UIViewController {
 //			print(error)
 //		}
 		
-		
 	}
 	
 }
@@ -147,7 +146,7 @@ extension MapViewController {
 	}
 }
 
-extension MapViewController {
+extension MapViewController : UITextFieldDelegate {
 	func setupTextField() {
 		
 		let attributedString = NSMutableAttributedString(string: "qual o seu destino?", attributes: [
@@ -162,7 +161,12 @@ extension MapViewController {
 		attributedString.addAttribute(.font, value: UIFont(name: "Exo-Bold", size: 18.0)!, range: NSRange(location: 18, length: 1))
 		
 		destinyTextField.attributedPlaceholder = attributedString
-
+		destinyTextField.delegate = self
+	}
+	
+	func textFieldDidBeginEditing(_ textField: UITextField) {
+		performSegue(withIdentifier: "goToDestiny", sender: self)
+		textField.resignFirstResponder()
 	}
 }
 

@@ -49,11 +49,27 @@
                     <connections>
                         <outlet property="destinyTextField" destination="k7V-4H-Ykq" id="JQK-zu-T4S"/>
                         <outlet property="placeholderMapView" destination="bX3-pP-o02" id="WET-mE-Yir"/>
+                        <segue destination="nDe-KZ-iGj" kind="show" identifier="goToDestiny" id="n15-Je-QbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHM-jv-IZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="1143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j9R-vg-4XV">
+            <objects>
+                <viewController id="nDe-KZ-iGj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nXw-lv-5Hk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GbF-JX-4mu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSp-lN-1bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="1143"/>
         </scene>
     </scenes>
 </document>
