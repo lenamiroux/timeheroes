@@ -7,12 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46757182D06778C73F73EEA5 /* Pods_TimeHerosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30FDB52EC90EFAC1C4D8B4 /* Pods_TimeHerosTests.framework */; };
+		6CC5BA5B02C6A5149D7CDD0F /* Pods_TimeHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */; };
+		9F0334A5209F0608005AC1CF /* ChoosesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334A4209F0608005AC1CF /* ChoosesViewController.swift */; };
+		9F0334A8209F072C005AC1CF /* ChoosesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334A7209F072C005AC1CF /* ChoosesService.swift */; };
+		9F0334AA209F0963005AC1CF /* Choose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334A9209F0963005AC1CF /* Choose.swift */; };
+		9F0334AD209F0EBB005AC1CF /* ChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334AB209F0EBB005AC1CF /* ChooseCell.swift */; };
+		9F0334AE209F0EBB005AC1CF /* ChooseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0334AC209F0EBB005AC1CF /* ChooseCell.xib */; };
+		9F0334B1209F224A005AC1CF /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334B0209F224A005AC1CF /* UIKit.swift */; };
+		9F0334B4209F2390005AC1CF /* ViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334B3209F2390005AC1CF /* ViewController+Additions.swift */; };
 		9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE1209E408300827CF0 /* AppDelegate.swift */; };
-		9F2DCBE4209E408300827CF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE3209E408300827CF0 /* ViewController.swift */; };
+		9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE3209E408300827CF0 /* MapViewController.swift */; };
 		9F2DCBE7209E408300827CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE5209E408300827CF0 /* Main.storyboard */; };
 		9F2DCBE9209E408500827CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE8209E408500827CF0 /* Assets.xcassets */; };
 		9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */; };
 		9F2DCBF7209E408600827CF0 /* TimeHerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBF6209E408600827CF0 /* TimeHerosTests.swift */; };
+		9F3875D1209E722700DD101A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3875D0209E722700DD101A /* Error.swift */; };
+		9F3875D3209E7C5500DD101A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3875D2209E7C5500DD101A /* MapKit.framework */; };
+		9F3875D7209E8C4900DD101A /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3875D6209E8C4900DD101A /* DAO.swift */; };
+		9F62C4EC209EBF3F00DE88ED /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */; };
+		9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */; };
+		9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */; };
+		9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F1209EC37C00DE88ED /* TabBarController.swift */; };
+		9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */; };
+		9F62C4FA209EE82C00DE88ED /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F8209EE82C00DE88ED /* DateCell.swift */; };
+		9F62C4FB209EE82C00DE88ED /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4F9209EE82C00DE88ED /* DateCell.xib */; };
+		9F62C4FF209EE8B500DE88ED /* Exo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */; };
+		9F62C502209EEE9100DE88ED /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C500209EEE9100DE88ED /* PlaceCell.swift */; };
+		9F62C503209EEE9100DE88ED /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C501209EEE9100DE88ED /* PlaceCell.xib */; };
+		9F62C507209EF7C700DE88ED /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C505209EF7C700DE88ED /* ButtonCell.swift */; };
+		9F62C508209EF7C700DE88ED /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C506209EF7C700DE88ED /* ButtonCell.xib */; };
+		9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */; };
+		9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */; };
+		9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */; };
+		9F876106209E490D0048BF82 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F876105209E490D0048BF82 /* Annotation.swift */; };
+		9FFF1203209E8EC7008FBD5D /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF1202209E8EC7008FBD5D /* URLProvider.swift */; };
+		9FFF1205209E91D6008FBD5D /* GeocoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF1204209E91D6008FBD5D /* GeocoderService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +56,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D61C9F0B09A3AD9C460F1D2 /* Pods-TimeHeros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeHeros.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeHeros/Pods-TimeHeros.release.xcconfig"; sourceTree = "<group>"; };
+		4B30FDB52EC90EFAC1C4D8B4 /* Pods_TimeHerosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeHerosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BA84690F4744C60769617F /* Pods-TimeHerosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeHerosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeHerosTests/Pods-TimeHerosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CAB0EAC959C8AAD1D488F97 /* Pods-TimeHerosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeHerosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeHerosTests/Pods-TimeHerosTests.release.xcconfig"; sourceTree = "<group>"; };
+		7EF10B8D8897BDD638FD880C /* Pods-TimeHeros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeHeros.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeHeros/Pods-TimeHeros.debug.xcconfig"; sourceTree = "<group>"; };
+		961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeHeros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0334A4209F0608005AC1CF /* ChoosesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosesViewController.swift; sourceTree = "<group>"; };
+		9F0334A7209F072C005AC1CF /* ChoosesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosesService.swift; sourceTree = "<group>"; };
+		9F0334A9209F0963005AC1CF /* Choose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choose.swift; sourceTree = "<group>"; };
+		9F0334AB209F0EBB005AC1CF /* ChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCell.swift; sourceTree = "<group>"; };
+		9F0334AC209F0EBB005AC1CF /* ChooseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseCell.xib; sourceTree = "<group>"; };
+		9F0334B0209F224A005AC1CF /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
+		9F0334B3209F2390005AC1CF /* ViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Additions.swift"; sourceTree = "<group>"; };
 		9F2DCBDE209E408300827CF0 /* TimeHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBE1209E408300827CF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F2DCBE3209E408300827CF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F2DCBE3209E408300827CF0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9F2DCBE6209E408300827CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F2DCBE8209E408500827CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2DCBEB209E408500827CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +79,27 @@
 		9F2DCBF2209E408500827CF0 /* TimeHerosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeHerosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBF6209E408600827CF0 /* TimeHerosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHerosTests.swift; sourceTree = "<group>"; };
 		9F2DCBF8209E408600827CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F3875D0209E722700DD101A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		9F3875D2209E7C5500DD101A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9F3875D6209E8C4900DD101A /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
+		9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeusDestinos.storyboard; sourceTree = "<group>"; };
+		9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recompensas.storyboard; sourceTree = "<group>"; };
+		9F62C4F1209EC37C00DE88ED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyViewController.swift; sourceTree = "<group>"; };
+		9F62C4F8209EE82C00DE88ED /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		9F62C4F9209EE82C00DE88ED /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Light.ttf"; sourceTree = "<group>"; };
+		9F62C500209EEE9100DE88ED /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		9F62C501209EEE9100DE88ED /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		9F62C505209EF7C700DE88ED /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		9F62C506209EF7C700DE88ED /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Medium.ttf"; sourceTree = "<group>"; };
+		9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Black.ttf"; sourceTree = "<group>"; };
+		9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
+		9F876105209E490D0048BF82 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		9FFF1202209E8EC7008FBD5D /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
+		9FFF1204209E91D6008FBD5D /* GeocoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3875D3209E7C5500DD101A /* MapKit.framework in Frameworks */,
+				6CC5BA5B02C6A5149D7CDD0F /* Pods_TimeHeros.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +116,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46757182D06778C73F73EEA5 /* Pods_TimeHerosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AD89F359CBA2F5E287914BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EF10B8D8897BDD638FD880C /* Pods-TimeHeros.debug.xcconfig */,
+				2D61C9F0B09A3AD9C460F1D2 /* Pods-TimeHeros.release.xcconfig */,
+				67BA84690F4744C60769617F /* Pods-TimeHerosTests.debug.xcconfig */,
+				6CAB0EAC959C8AAD1D488F97 /* Pods-TimeHerosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F0334A6209F060E005AC1CF /* Chooses */ = {
+			isa = PBXGroup;
+			children = (
+				9F0334A4209F0608005AC1CF /* ChoosesViewController.swift */,
+			);
+			path = Chooses;
+			sourceTree = "<group>";
+		};
+		9F0334AF209F0EC0005AC1CF /* ChooseCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F0334AB209F0EBB005AC1CF /* ChooseCell.swift */,
+				9F0334AC209F0EBB005AC1CF /* ChooseCell.xib */,
+			);
+			path = ChooseCell;
+			sourceTree = "<group>";
+		};
+		9F0334B2209F2349005AC1CF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9F0334B3209F2390005AC1CF /* ViewController+Additions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		9F2DCBD5209E408300827CF0 = {
 			isa = PBXGroup;
 			children = (
 				9F2DCBE0209E408300827CF0 /* TimeHeros */,
 				9F2DCBF5209E408600827CF0 /* TimeHerosTests */,
 				9F2DCBDF209E408300827CF0 /* Products */,
+				1AD89F359CBA2F5E287914BD /* Pods */,
+				EC822E14CF2DFB1DC1B10945 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +182,16 @@
 		9F2DCBE0209E408300827CF0 /* TimeHeros */ = {
 			isa = PBXGroup;
 			children = (
+				9F0334B2209F2349005AC1CF /* Util */,
+				9F751DCB209EB95B009D5214 /* Resources */,
+				9F3875D4209E8C2900DD101A /* Service */,
+				9F876104209E48310048BF82 /* View */,
+				9F876103209E482A0048BF82 /* Model */,
+				9F876102209E48120048BF82 /* Controller */,
 				9F2DCBE1209E408300827CF0 /* AppDelegate.swift */,
-				9F2DCBE3209E408300827CF0 /* ViewController.swift */,
-				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
 				9F2DCBE8209E408500827CF0 /* Assets.xcassets */,
-				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
 				9F2DCBED209E408500827CF0 /* Info.plist */,
+				9F3875D0209E722700DD101A /* Error.swift */,
 			);
 			path = TimeHeros;
 			sourceTree = "<group>";
@@ -96,6 +205,142 @@
 			path = TimeHerosTests;
 			sourceTree = "<group>";
 		};
+		9F3875D4209E8C2900DD101A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9F3875D5209E8C3500DD101A /* DAO */,
+				9FFF1202209E8EC7008FBD5D /* URLProvider.swift */,
+				9FFF1204209E91D6008FBD5D /* GeocoderService.swift */,
+				9F0334A7209F072C005AC1CF /* ChoosesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9F3875D5209E8C3500DD101A /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				9F3875D6209E8C4900DD101A /* DAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		9F62C4F3209EC9E900DE88ED /* Destiny */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */,
+			);
+			path = Destiny;
+			sourceTree = "<group>";
+		};
+		9F62C4F6209EE6F300DE88ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */,
+				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
+				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
+				9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */,
+				9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9F62C4F7209EE80300DE88ED /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4FD209EE83C00DE88ED /* DateCell */,
+				9F62C504209EEE9700DE88ED /* PlaceCell */,
+				9F62C509209EF7CC00DE88ED /* ButtonCell */,
+				9F0334AF209F0EC0005AC1CF /* ChooseCell */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		9F62C4FD209EE83C00DE88ED /* DateCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4F8209EE82C00DE88ED /* DateCell.swift */,
+				9F62C4F9209EE82C00DE88ED /* DateCell.xib */,
+			);
+			path = DateCell;
+			sourceTree = "<group>";
+		};
+		9F62C504209EEE9700DE88ED /* PlaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C500209EEE9100DE88ED /* PlaceCell.swift */,
+				9F62C501209EEE9100DE88ED /* PlaceCell.xib */,
+			);
+			path = PlaceCell;
+			sourceTree = "<group>";
+		};
+		9F62C509209EF7CC00DE88ED /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C505209EF7C700DE88ED /* ButtonCell.swift */,
+				9F62C506209EF7C700DE88ED /* ButtonCell.xib */,
+			);
+			path = ButtonCell;
+			sourceTree = "<group>";
+		};
+		9F751DCB209EB95B009D5214 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F751DCC209EB9B8009D5214 /* Fonts */,
+				9F0334B0209F224A005AC1CF /* UIKit.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F751DCC209EB9B8009D5214 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */,
+				9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */,
+				9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */,
+				9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9F876102209E48120048BF82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F0334A6209F060E005AC1CF /* Chooses */,
+				9F62C4F3209EC9E900DE88ED /* Destiny */,
+				9F2DCBE3209E408300827CF0 /* MapViewController.swift */,
+				9F62C4F1209EC37C00DE88ED /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F876103209E482A0048BF82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F876105209E490D0048BF82 /* Annotation.swift */,
+				9F0334A9209F0963005AC1CF /* Choose.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F876104209E48310048BF82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4F7209EE80300DE88ED /* Custom Cells */,
+				9F62C4F6209EE6F300DE88ED /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC822E14CF2DFB1DC1B10945 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F3875D2209E7C5500DD101A /* MapKit.framework */,
+				961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */,
+				4B30FDB52EC90EFAC1C4D8B4 /* Pods_TimeHerosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F2DCBFB209E408600827CF0 /* Build configuration list for PBXNativeTarget "TimeHeros" */;
 			buildPhases = (
+				41110C98B1406DD301970C06 /* [CP] Check Pods Manifest.lock */,
 				9F2DCBDA209E408300827CF0 /* Sources */,
 				9F2DCBDB209E408300827CF0 /* Frameworks */,
 				9F2DCBDC209E408300827CF0 /* Resources */,
+				56FB8040B09D5EDDCCC1426C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +367,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F2DCBFE209E408600827CF0 /* Build configuration list for PBXNativeTarget "TimeHerosTests" */;
 			buildPhases = (
+				23496A459995A25975AF34F0 /* [CP] Check Pods Manifest.lock */,
 				9F2DCBEE209E408500827CF0 /* Sources */,
 				9F2DCBEF209E408500827CF0 /* Frameworks */,
 				9F2DCBF0209E408500827CF0 /* Resources */,
@@ -146,6 +394,11 @@
 				TargetAttributes = {
 					9F2DCBDD209E408300827CF0 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9F2DCBF1209E408500827CF0 = {
 						CreatedOnToolsVersion = 9.3;
@@ -177,9 +430,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */,
+				9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */,
+				9F62C508209EF7C700DE88ED /* ButtonCell.xib in Resources */,
+				9F62C4EC209EBF3F00DE88ED /* Inicio.storyboard in Resources */,
+				9F62C503209EEE9100DE88ED /* PlaceCell.xib in Resources */,
+				9F62C4FF209EE8B500DE88ED /* Exo-Light.ttf in Resources */,
+				9F0334AE209F0EBB005AC1CF /* ChooseCell.xib in Resources */,
+				9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */,
 				9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */,
 				9F2DCBE9209E408500827CF0 /* Assets.xcassets in Resources */,
+				9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */,
+				9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */,
 				9F2DCBE7209E408300827CF0 /* Main.storyboard in Resources */,
+				9F62C4FB209EE82C00DE88ED /* DateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +456,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23496A459995A25975AF34F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeHerosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41110C98B1406DD301970C06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeHeros-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56FB8040B09D5EDDCCC1426C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeHeros/Pods-TimeHeros-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxCoreNavigation/MapboxCoreNavigation.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxGeocoder.swift/MapboxGeocoder.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxNavigation/MapboxNavigation.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxSpeech/MapboxSpeech.framework",
+				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
+				"${BUILT_PRODUCTS_DIR}/Solar/Solar.framework",
+				"${BUILT_PRODUCTS_DIR}/Turf/Turf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxCoreNavigation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxDirections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxGeocoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxSpeech.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Solar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeHeros/Pods-TimeHeros-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F2DCBDA209E408300827CF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F2DCBE4209E408300827CF0 /* ViewController.swift in Sources */,
+				9F3875D1209E722700DD101A /* Error.swift in Sources */,
+				9F62C4FA209EE82C00DE88ED /* DateCell.swift in Sources */,
+				9F0334B1209F224A005AC1CF /* UIKit.swift in Sources */,
+				9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */,
+				9FFF1205209E91D6008FBD5D /* GeocoderService.swift in Sources */,
+				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
+				9FFF1203209E8EC7008FBD5D /* URLProvider.swift in Sources */,
+				9F0334A8209F072C005AC1CF /* ChoosesService.swift in Sources */,
+				9F62C502209EEE9100DE88ED /* PlaceCell.swift in Sources */,
+				9F876106209E490D0048BF82 /* Annotation.swift in Sources */,
+				9F0334A5209F0608005AC1CF /* ChoosesViewController.swift in Sources */,
+				9F0334AA209F0963005AC1CF /* Choose.swift in Sources */,
 				9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */,
+				9F0334AD209F0EBB005AC1CF /* ChooseCell.swift in Sources */,
+				9F0334B4209F2390005AC1CF /* ViewController+Additions.swift in Sources */,
+				9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */,
+				9F3875D7209E8C4900DD101A /* DAO.swift in Sources */,
+				9F62C507209EF7C700DE88ED /* ButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +717,13 @@
 		};
 		9F2DCBFC209E408600827CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF10B8D8897BDD638FD880C /* Pods-TimeHeros.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHeros/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +737,13 @@
 		};
 		9F2DCBFD209E408600827CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D61C9F0B09A3AD9C460F1D2 /* Pods-TimeHeros.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHeros/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +757,7 @@
 		};
 		9F2DCBFF209E408600827CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BA84690F4744C60769617F /* Pods-TimeHerosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +779,7 @@
 		};
 		9F2DCC00209E408600827CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CAB0EAC959C8AAD1D488F97 /* Pods-TimeHerosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

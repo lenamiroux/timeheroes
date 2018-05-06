@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UKS-H6-eRo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Início-->
+        <scene sceneID="I5x-Zf-fFf">
+            <objects>
+                <viewController id="UKS-H6-eRo" customClass="MapViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gn-67-a5v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-pP-o02">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="qual o seu destino?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7V-4H-Ykq">
+                                <rect key="frame" x="28" y="440" width="319" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Iit-dJ-F0N"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="height" secondItem="5gn-67-a5v" secondAttribute="height" id="80U-JH-ROV"/>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="width" secondItem="5gn-67-a5v" secondAttribute="width" id="Bd0-g1-jZS"/>
+                            <constraint firstItem="k7V-4H-Ykq" firstAttribute="width" secondItem="5gn-67-a5v" secondAttribute="width" multiplier="0.85" id="D8N-cb-qYh"/>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="centerX" secondItem="Gpf-ZJ-9zp" secondAttribute="centerX" id="Uga-Rh-lLx"/>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="centerY" secondItem="Gpf-ZJ-9zp" secondAttribute="centerY" id="b27-gb-DDb"/>
+                            <constraint firstItem="Gpf-ZJ-9zp" firstAttribute="bottom" secondItem="k7V-4H-Ykq" secondAttribute="bottom" constant="167" id="ffy-OG-zyS"/>
+                            <constraint firstItem="k7V-4H-Ykq" firstAttribute="centerX" secondItem="Gpf-ZJ-9zp" secondAttribute="centerX" id="pgu-V7-1RR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gpf-ZJ-9zp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Início" id="lz3-mQ-f5y"/>
+                    <connections>
+                        <outlet property="destinyTextField" destination="k7V-4H-Ykq" id="JQK-zu-T4S"/>
+                        <outlet property="placeholderMapView" destination="bX3-pP-o02" id="WET-mE-Yir"/>
+                        <segue destination="nDe-KZ-iGj" kind="show" identifier="goToDestiny" id="n15-Je-QbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHM-jv-IZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="1143"/>
+        </scene>
+        <!--Destiny View Controller-->
+        <scene sceneID="j9R-vg-4XV">
+            <objects>
+                <viewController id="nDe-KZ-iGj" customClass="DestinyViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nXw-lv-5Hk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R05-OH-b20">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nDe-KZ-iGj" id="gcA-yI-Va0"/>
+                                    <outlet property="delegate" destination="nDe-KZ-iGj" id="9ik-R9-N4E"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R05-OH-b20" firstAttribute="centerX" secondItem="GbF-JX-4mu" secondAttribute="centerX" id="17a-co-RGb"/>
+                            <constraint firstItem="R05-OH-b20" firstAttribute="height" secondItem="nXw-lv-5Hk" secondAttribute="height" id="HWJ-gc-3qu"/>
+                            <constraint firstItem="R05-OH-b20" firstAttribute="centerY" secondItem="GbF-JX-4mu" secondAttribute="centerY" id="INY-ij-Xs4"/>
+                            <constraint firstItem="R05-OH-b20" firstAttribute="width" secondItem="nXw-lv-5Hk" secondAttribute="width" id="qlS-TO-lKS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GbF-JX-4mu"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="R05-OH-b20" id="dvw-nP-F8g"/>
+                        <segue destination="KPO-pJ-hEq" kind="show" identifier="goToChooses" id="seI-ep-EU9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSp-lN-1bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="1143"/>
+        </scene>
+        <!--Chooses View Controller-->
+        <scene sceneID="n7J-Yc-YPF">
+            <objects>
+                <viewController id="KPO-pJ-hEq" customClass="ChoosesViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b8C-Cp-qt5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xoQ-sP-hAD">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KPO-pJ-hEq" id="0m3-ih-ulN"/>
+                                    <outlet property="delegate" destination="KPO-pJ-hEq" id="PRm-85-BM0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="centerX" secondItem="Ff3-vx-I1Z" secondAttribute="centerX" id="7P1-uG-rwv"/>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="centerY" secondItem="Ff3-vx-I1Z" secondAttribute="centerY" id="Eci-fE-30y"/>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="width" secondItem="b8C-Cp-qt5" secondAttribute="width" id="IXd-N5-ve9"/>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="height" secondItem="b8C-Cp-qt5" secondAttribute="height" id="OuB-1z-t6l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ff3-vx-I1Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xoQ-sP-hAD" id="zSI-80-Xq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4H-b5-V9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2569" y="1143"/>
+        </scene>
+    </scenes>
+</document>
