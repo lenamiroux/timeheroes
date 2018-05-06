@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo-Bold.ttf">
+            <string>Exo-Bold</string>
+        </array>
+        <array key="Exo-Light.ttf">
+            <string>Exo-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="KGk-i7-Jjw" customClass="PlaceCell" customModule="TimeHeros" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-uu-u5c">
+                        <rect key="frame" x="45" y="5" width="20" height="38"/>
+                        <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-em-wIt">
+                        <rect key="frame" x="53.5" y="43" width="3" height="128.5"/>
+                        <color key="backgroundColor" red="0.56470588239999997" green="0.074509803920000006" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="sdk-1b-0Wq"/>
+                        </constraints>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEm-wx-aRa">
+                        <rect key="frame" x="75" y="5" width="241" height="64"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Indie Warehouse Coworking
+SHIN Ca2, 07, Brasília - DF</string>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Exo-Light" family="Exo" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EEm-wx-aRa" secondAttribute="trailing" constant="4" id="4xK-Qt-vPc"/>
+                    <constraint firstItem="2rv-uu-u5c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="NOf-08-NfC"/>
+                    <constraint firstAttribute="bottom" secondItem="Mti-em-wIt" secondAttribute="bottom" constant="-2" id="NWm-Hg-6hQ"/>
+                    <constraint firstItem="2rv-uu-u5c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cUd-US-uRO"/>
+                    <constraint firstItem="Mti-em-wIt" firstAttribute="top" secondItem="2rv-uu-u5c" secondAttribute="bottom" id="hZC-mT-aWr"/>
+                    <constraint firstItem="EEm-wx-aRa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="jqK-OW-fDf"/>
+                    <constraint firstItem="EEm-wx-aRa" firstAttribute="leading" secondItem="2rv-uu-u5c" secondAttribute="trailing" constant="10" id="lVp-ke-pvQ"/>
+                    <constraint firstItem="Mti-em-wIt" firstAttribute="centerX" secondItem="2rv-uu-u5c" secondAttribute="centerX" id="sws-hS-qEw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="1000" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="addressTextView" destination="EEm-wx-aRa" id="PvC-7U-OaP"/>
+                <outlet property="lineView" destination="Mti-em-wIt" id="7hE-vl-TIt"/>
+                <outlet property="pointLabel" destination="2rv-uu-u5c" id="7ib-eo-A2Q"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="117"/>
+        </tableViewCell>
+    </objects>
+</document>

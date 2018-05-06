@@ -26,6 +26,8 @@
 		9F62C4FA209EE82C00DE88ED /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F8209EE82C00DE88ED /* DateCell.swift */; };
 		9F62C4FB209EE82C00DE88ED /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4F9209EE82C00DE88ED /* DateCell.xib */; };
 		9F62C4FF209EE8B500DE88ED /* Exo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */; };
+		9F62C502209EEE9100DE88ED /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C500209EEE9100DE88ED /* PlaceCell.swift */; };
+		9F62C503209EEE9100DE88ED /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C501209EEE9100DE88ED /* PlaceCell.xib */; };
 		9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */; };
 		9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */; };
 		9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */; };
@@ -72,6 +74,8 @@
 		9F62C4F8209EE82C00DE88ED /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		9F62C4F9209EE82C00DE88ED /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
 		9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Light.ttf"; sourceTree = "<group>"; };
+		9F62C500209EEE9100DE88ED /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		9F62C501209EEE9100DE88ED /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
 		9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Medium.ttf"; sourceTree = "<group>"; };
 		9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Black.ttf"; sourceTree = "<group>"; };
 		9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				9F62C4FD209EE83C00DE88ED /* DateCell */,
+				9F62C504209EEE9700DE88ED /* PlaceCell */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -210,6 +215,15 @@
 				9F62C4F9209EE82C00DE88ED /* DateCell.xib */,
 			);
 			path = DateCell;
+			sourceTree = "<group>";
+		};
+		9F62C504209EEE9700DE88ED /* PlaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C500209EEE9100DE88ED /* PlaceCell.swift */,
+				9F62C501209EEE9100DE88ED /* PlaceCell.xib */,
+			);
+			path = PlaceCell;
 			sourceTree = "<group>";
 		};
 		9F751DCB209EB95B009D5214 /* Resources */ = {
@@ -360,6 +374,7 @@
 				9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */,
 				9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */,
 				9F62C4EC209EBF3F00DE88ED /* Inicio.storyboard in Resources */,
+				9F62C503209EEE9100DE88ED /* PlaceCell.xib in Resources */,
 				9F62C4FF209EE8B500DE88ED /* Exo-Light.ttf in Resources */,
 				9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */,
 				9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */,
@@ -472,6 +487,7 @@
 				9FFF1205209E91D6008FBD5D /* GeocoderService.swift in Sources */,
 				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
 				9FFF1203209E8EC7008FBD5D /* URLProvider.swift in Sources */,
+				9F62C502209EEE9100DE88ED /* PlaceCell.swift in Sources */,
 				9F876106209E490D0048BF82 /* Annotation.swift in Sources */,
 				9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */,
 				9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */,

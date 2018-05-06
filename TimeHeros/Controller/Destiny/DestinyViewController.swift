@@ -31,13 +31,15 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
+		return 3
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		switch indexPath.row {
 		case 0:
 			return DateCell.cellHeight
+		case 1, 2:
+			return PlaceCell.cellHeight
 		default:
 			return 0
 		}
@@ -48,6 +50,10 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 		switch indexPath.row {
 		case 0:
 			return generateDateCell()
+		case 1:
+			return generatePlaceCell(address: "Indie Warehouse Coworking SHIN Ca2, 07, Brasília - DF", point: "A")
+		case 2:
+			return generatePlaceCell(address: "Av. das Araucárias Q 205, 1655 Ed. Turmalina", point: "B")
 		default:
 			return UITableViewCell()
 		}
@@ -60,6 +66,7 @@ extension DestinyViewController {
 	
 	func registerCell() {
 		tableView.register(UINib(nibName: "DateCell", bundle: Bundle.main), forCellReuseIdentifier: DateCell.reuseIdentifier)
+		tableView.register(UINib(nibName: "PlaceCell", bundle: Bundle.main), forCellReuseIdentifier: PlaceCell.reuseIdentifier)
 	}
 	
 	func generateDateCell() -> DateCell {
@@ -73,6 +80,21 @@ extension DestinyViewController {
 		let date = dateFormmater.string(from: now)
 		cell.dateLabel.text = date
 		
+		return cell
+	}
+	
+	func generatePlaceCell(address: String, point: String) -> PlaceCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: PlaceCell.reuseIdentifier) as! PlaceCell
+		
+		cell.pointLabel.text = point
+		if point == "A" {
+			cell.lineView.isHidden = false
+			cell.addressTextView.text = address
+			cell.addressTextView.isUserInteractionEnabled = false
+		} else {
+			cell.lineView.isHidden = true
+			cell.addressTextView.toolbarPlaceholder = address
+		}
 		return cell
 	}
 }
