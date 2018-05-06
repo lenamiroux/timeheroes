@@ -10,6 +10,7 @@ target 'TimeHeros' do
   pod 'MapboxNavigation', '~> 0.16.2'
   pod 'Alamofire'
   pod 'MapboxGeocoder.swift', '~> 0.8'
+  pod 'IQKeyboardManager'
   
   target 'TimeHerosTests' do
     inherit! :search_paths

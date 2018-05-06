@@ -15,7 +15,9 @@ import MapboxDirections
 class MapViewController: UIViewController {
 
 //	@IBOutlet weak var mapView: MGLMapView!
+	@IBOutlet weak var placeholderMapView: UIView!
 	
+	@IBOutlet weak var destinyTextField: UITextField!
 	var navigationMap: NavigationMapView!
 	var directionsRoute: Route?
 	
@@ -24,6 +26,7 @@ class MapViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupMap()
+		setupTextField()
 	}
 
 	
@@ -38,10 +41,10 @@ class MapViewController: UIViewController {
 		view.addSubview(addButton)
 		
 		
-		GeocoderService.search(byString: "Taguatinga Shopping") { (placeName, coordinates, error) in
-			
-			print(error)
-		}
+//		GeocoderService.search(byString: "Taguatinga Shopping") { (placeName, coordinates, error) in
+//
+//			print(error)
+//		}
 		
 		
 	}
@@ -52,7 +55,7 @@ extension MapViewController {
 	
 	func setupMap() {
 		navigationMap = NavigationMapView(frame: view.bounds)
-		view.addSubview(navigationMap)
+		placeholderMapView.addSubview(navigationMap)
 
 		navigationMap.showsUserLocation = true
 		navigationMap.setUserTrackingMode(.follow, animated: true)
@@ -141,6 +144,25 @@ extension MapViewController {
 			navigationMap.style?.addSource(source)
 			navigationMap.style?.addLayer(lineStyle)
 		}
+	}
+}
+
+extension MapViewController {
+	func setupTextField() {
+		
+		let attributedString = NSMutableAttributedString(string: "qual o seu destino?", attributes: [
+			.font: UIFont(name: "Exo-Medium", size: 18.0)!,
+			.foregroundColor: UIColor(white: 74.0 / 255.0, alpha: 1.0),
+			.kern: -0.15
+			])
+		attributedString.addAttributes([
+			.font: UIFont(name: "Exo-Black", size: 18.0)!,
+			.foregroundColor: UIColor(red: 144.0 / 255.0, green: 19.0 / 255.0, blue: 254.0 / 255.0, alpha: 1.0)
+			], range: NSRange(location: 11, length: 7))
+		attributedString.addAttribute(.font, value: UIFont(name: "Exo-Bold", size: 18.0)!, range: NSRange(location: 18, length: 1))
+		
+		destinyTextField.attributedPlaceholder = attributedString
+
 	}
 }
 

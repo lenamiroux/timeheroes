@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,10 +50,38 @@
                     <view key="view" contentMode="scaleToFill" id="CGd-pZ-KCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEZ-as-Wt5">
+                                <rect key="frame" x="0.0" y="7" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="qual o seu destino?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-tf-Y4E">
+                                <rect key="frame" x="28" y="391" width="319" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="knT-jI-lh1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="width" secondItem="CGd-pZ-KCP" secondAttribute="width" id="CBX-QX-Mb4"/>
+                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="centerY" secondItem="klT-VK-MJ4" secondAttribute="centerY" id="F0P-4C-Ehk"/>
+                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="centerX" secondItem="klT-VK-MJ4" secondAttribute="centerX" id="Gv0-99-cEJ"/>
+                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="height" secondItem="CGd-pZ-KCP" secondAttribute="height" id="MMK-SE-bff"/>
+                            <constraint firstItem="klT-VK-MJ4" firstAttribute="bottom" secondItem="oFC-tf-Y4E" secondAttribute="bottom" constant="167" id="TOe-pP-bUT"/>
+                            <constraint firstItem="oFC-tf-Y4E" firstAttribute="width" secondItem="CGd-pZ-KCP" secondAttribute="width" multiplier="0.85" id="mcc-Yc-wj6"/>
+                            <constraint firstItem="oFC-tf-Y4E" firstAttribute="centerX" secondItem="klT-VK-MJ4" secondAttribute="centerX" id="sOP-pp-0kv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="klT-VK-MJ4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Início" id="pwx-dK-vx0"/>
+                    <connections>
+                        <outlet property="destinyTextField" destination="oFC-tf-Y4E" id="WTK-w0-Una"/>
+                        <outlet property="placeholderMapView" destination="lEZ-as-Wt5" id="qaZ-rz-c3g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5v-7F-kuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

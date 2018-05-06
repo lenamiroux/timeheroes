@@ -66,5 +66,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Exo-Black.ttf</string>
+		<string>Exo-Bold.ttf</string>
+		<string>Exo-Medium.ttf</string>
+	</array>
 </dict>
 </plist>
