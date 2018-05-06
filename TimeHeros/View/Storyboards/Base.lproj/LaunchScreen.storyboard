@@ -19,15 +19,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2QC-Qc-ZS2">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pou-se-z8g">
                                 <rect key="frame" x="85" y="273.5" width="206" height="140"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.56470588235294117" green="0.074509803921568626" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Pou-se-z8g" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.55" id="3XM-CN-fOE"/>
+                            <constraint firstItem="2QC-Qc-ZS2" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Qsd-m2-msL"/>
                             <constraint firstItem="Pou-se-z8g" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.21" id="cQ1-YK-AaT"/>
+                            <constraint firstItem="2QC-Qc-ZS2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cw9-TF-nSZ"/>
                             <constraint firstItem="Pou-se-z8g" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dbM-T5-CdL"/>
+                            <constraint firstItem="2QC-Qc-ZS2" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="iLV-ck-peA"/>
+                            <constraint firstItem="2QC-Qc-ZS2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uKA-TP-key"/>
                             <constraint firstItem="Pou-se-z8g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zjZ-qt-a29"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -39,6 +45,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="375" height="667"/>
         <image name="logo" width="201" height="141"/>
     </resources>
 </document>

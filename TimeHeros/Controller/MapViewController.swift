@@ -27,6 +27,7 @@ class MapViewController: UIViewController {
 		super.viewDidLoad()
 		setupMap()
 		setupTextField()
+		self.navigationController?.navigationBar.isHidden = true
 	}
 
 	
@@ -57,7 +58,7 @@ extension MapViewController {
 		placeholderMapView.addSubview(navigationMap)
 
 		navigationMap.showsUserLocation = true
-		navigationMap.setUserTrackingMode(.follow, animated: false)
+		navigationMap.setUserTrackingMode(.follow, animated: true)
 		navigationMap.delegate = self
 
 	}

@@ -16,6 +16,7 @@ class DestinyViewController: UIViewController {
         super.viewDidLoad()
 		registerCell()
 		setupNavigation()
+		self.navigationController?.navigationBar.isHidden = false
     }
 	
 	func setupNavigation() {

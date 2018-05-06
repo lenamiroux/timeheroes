@@ -27,7 +27,7 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9W-XH-ibd">
                         <rect key="frame" x="32" y="38" width="256" height="50"/>
-                        <color key="backgroundColor" red="0.56470588235294117" green="0.074509803921568626" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.56470588239999997" green="0.074509803920000006" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="Zim-yP-SL9"/>
                         </constraints>
@@ -46,6 +46,7 @@
                     <constraint firstItem="I9W-XH-ibd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nbk-78-B2W"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <inset key="separatorInset" minX="1000" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
