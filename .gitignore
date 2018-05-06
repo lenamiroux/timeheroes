@@ -91,3 +91,7 @@ fastlane/test_output
 *.xcworkspace
 
 # End of https://www.gitignore.io/api/xcode,swift,cocoapods
+#
+*.pyc
+*.swp
+*.swo
