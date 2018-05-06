@@ -6,6 +6,10 @@ import requests
 from flask import Flask, jsonify
 import math
 import psycopg2
+import psycopg2.extras
+import json
+import random
+import datetime
 
 app = Flask(__name__)
 
@@ -17,12 +21,46 @@ lat=-105
 
 INCIDENTS_END_POINT="http://dev.virtualearth.net/REST/v1/Traffic/Incidents/37,-105,45,-94?key="+MS_KEY
 
-@app.route("/locations/<lat>,<lon>")
-def get_locations(lat, lon):
-    pg = psycopg2.connect("dbname='mean_traffic' user='postgres' host='localhost' password='postgres'")
+@app.route("/locations/<int:hour>/<int:minute>")
+def get_locations(hour, minute):
+    pg = psycopg2.connect("dbname='timeheroes' user='postgres' host='localhost' password='postgres'")
+    
+    sql = "select id_mean_traffic, mean_delay_time, mean_person from mean_traffic where id_mean_traffic = (select floor(random() * 672 + 1)::int);"
 
-    has_traffic = extract_traffic_info(lat,lon)
-    return has_traffic
+    cursor = pg.cursor(cursor_factory=psycopg2.extras.DictCursor)
+    
+    cursor.execute(sql)
+    res = cursor.fetchone()
+    
+    dict_res = {}
+    columns = ['id_mean_traffic', 'mean_delay_time', 'mean_person']
+    for i, key in zip(res, columns):
+        dict_res[key] = i
+    
+    if minute < 15:
+        minute_sug = random.choice(['30', '45'])
+        hour_sug = hour
+    elif minute < 30:
+        minute_sug = random.choice(['45', '00'])
+        hour_sug = hour
+        if minute_sug == '00':
+            if hour == 23:
+                hour_sug = '00'
+            else:
+                hour_sug = hour + 1
+    else:
+        minute_sug = random.choice(['00', '15'])
+        if hour == 23:
+            hour_sug = '00'
+        else:
+            hour_sug = hour + 1
+    
+    time_sug = str(hour_sug) + ':' + minute_sug + ':'+ '00' 
+    dict_res['time_suggested'] = time_sug
+    
+    dict_res['time_saved'] = dict_res['mean_delay_time'] * 15
+    
+    return jsonify(dict_res)
 
 def extract_traffic_info(lat, lon):
     r = requests.get(INCIDENTS_END_POINT, )
@@ -65,5 +103,3 @@ def boundingBox(latitudeInDegrees, longitudeInDegrees, halfSideInKm):
         "lonMin": lonMin,
         "lonMax": lonMax
     }
-
->>>>>>> f6514874e021e719af325efd7edcddd58962a03e
