@@ -1,6 +1,6 @@
 # UberHack
 
-# Definição do
+# Definição do TimeHeroes
 ## Solução
 
 Imagine se uma decisão sobre como e quando se transportar pudesse salvar o tempo de milhares de pessoas. A ideia é distribuir a mobilidade urbana no tempo (melhores horários para sair) e no espaço (calçada, ciclovia, rodovia) com base na conscientização do usuário sobre o impacto que ele causa no trânsito, habilitando-o a tomar uma melhor decisão para ele e o coletivo.
