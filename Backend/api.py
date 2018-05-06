@@ -16,11 +16,7 @@ app = Flask(__name__)
 
 MS_KEY="Ai6Prj6b3NsRhcnEUuHfSz_k4RIWc_WpSd25tTCPtMfwKubnUZn9xuJT3iAxxOal"
 
-"""
-lat=-105 
-"""
-
-INCIDENTS_END_POINT="http://dev.virtualearth.net/REST/v1/Traffic/Incidents/37,-105,45,-94?key="+MS_KEY
+INCIDENTS_END_POINT="http://dev.virtualearth.net/REST/v1/Traffic/Incidents/%s,%s,%s,%s?key="+MS_KEY
 
 @app.route("/meus-destinos")
 def meus_destinos():
@@ -80,8 +76,8 @@ def deg2rad(degrees):
 def rad2deg(radians):
     return 180.0*radians/math.pi
 
-WGS84_a = 6378137.0  # Major semiaxis [m]
-WGS84_b = 6356752.3  # Minor semiaxis [m]
+WGS84_a = 6378137.0  
+WGS84_b = 6356752.3
 
 def WGS84EarthRadius(lat):
     An = WGS84_a*WGS84_a * math.cos(lat)
