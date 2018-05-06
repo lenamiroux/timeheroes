@@ -8,6 +8,7 @@ target 'TimeHeros' do
   # Pods for TimeHeros
   # pod 'Mapbox-iOS-SDK', '~> 4.0'
   pod 'MapboxNavigation', '~> 0.16.2'
+  pod 'Alamofire'
 
   target 'TimeHerosTests' do
     inherit! :search_paths
