@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="886" y="1143"/>
         </scene>
-        <!--View Controller-->
+        <!--Destiny View Controller-->
         <scene sceneID="j9R-vg-4XV">
             <objects>
-                <viewController id="nDe-KZ-iGj" sceneMemberID="viewController">
+                <viewController id="nDe-KZ-iGj" customClass="DestinyViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXw-lv-5Hk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -22,6 +22,7 @@
 		9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */; };
 		9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */; };
 		9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F1209EC37C00DE88ED /* TabBarController.swift */; };
+		9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */; };
 		9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */; };
 		9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */; };
 		9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */; };
@@ -64,6 +65,7 @@
 		9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeusDestinos.storyboard; sourceTree = "<group>"; };
 		9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recompensas.storyboard; sourceTree = "<group>"; };
 		9F62C4F1209EC37C00DE88ED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyViewController.swift; sourceTree = "<group>"; };
 		9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Medium.ttf"; sourceTree = "<group>"; };
 		9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Black.ttf"; sourceTree = "<group>"; };
 		9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
@@ -167,6 +169,26 @@
 			path = DAO;
 			sourceTree = "<group>";
 		};
+		9F62C4F3209EC9E900DE88ED /* Destiny */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */,
+			);
+			path = Destiny;
+			sourceTree = "<group>";
+		};
+		9F62C4F6209EE6F300DE88ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */,
+				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
+				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
+				9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */,
+				9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		9F751DCB209EB95B009D5214 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +210,7 @@
 		9F876102209E48120048BF82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9F62C4F3209EC9E900DE88ED /* Destiny */,
 				9F2DCBE3209E408300827CF0 /* MapViewController.swift */,
 				9F62C4F1209EC37C00DE88ED /* TabBarController.swift */,
 			);
@@ -205,11 +228,7 @@
 		9F876104209E48310048BF82 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */,
-				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
-				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
-				9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */,
-				9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */,
+				9F62C4F6209EE6F300DE88ED /* Storyboards */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -427,6 +446,7 @@
 				9FFF1203209E8EC7008FBD5D /* URLProvider.swift in Sources */,
 				9F876106209E490D0048BF82 /* Annotation.swift in Sources */,
 				9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */,
+				9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */,
 				9F3875D7209E8C4900DD101A /* DAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
