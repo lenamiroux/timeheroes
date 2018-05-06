@@ -5,6 +5,7 @@ import requests
 
 from flask import Flask, jsonify
 import math
+import psycopg2
 
 app = Flask(__name__)
 
@@ -18,6 +19,8 @@ INCIDENTS_END_POINT="http://dev.virtualearth.net/REST/v1/Traffic/Incidents/37,-1
 
 @app.route("/locations/<lat>,<lon>")
 def get_locations(lat, lon):
+    pg = psycopg2.connect("dbname='mean_traffic' user='postgres' host='localhost' password='postgres'")
+
     has_traffic = extract_traffic_info(lat,lon)
     return has_traffic
 
