@@ -31,7 +31,7 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 3
+		return 5
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -40,8 +40,10 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 			return DateCell.cellHeight
 		case 1, 2:
 			return PlaceCell.cellHeight
+		case 4:
+			return ButtonCell.cellHeight
 		default:
-			return 0
+			return 80
 		}
 	}
 	
@@ -54,6 +56,12 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 			return generatePlaceCell(address: "Indie Warehouse Coworking SHIN Ca2, 07, Brasília - DF", point: "A")
 		case 2:
 			return generatePlaceCell(address: "Av. das Araucárias Q 205, 1655 Ed. Turmalina", point: "B")
+		case 3:
+			let cell = UITableViewCell()
+			cell.separatorInset.left = 1000
+			return cell
+		case 4:
+			return generateButtonCell(withName: "salvar tempo")
 		default:
 			return UITableViewCell()
 		}
@@ -67,6 +75,7 @@ extension DestinyViewController {
 	func registerCell() {
 		tableView.register(UINib(nibName: "DateCell", bundle: Bundle.main), forCellReuseIdentifier: DateCell.reuseIdentifier)
 		tableView.register(UINib(nibName: "PlaceCell", bundle: Bundle.main), forCellReuseIdentifier: PlaceCell.reuseIdentifier)
+		tableView.register(UINib(nibName: "ButtonCell", bundle: Bundle.main), forCellReuseIdentifier: ButtonCell.reuseIdentifier)
 	}
 	
 	func generateDateCell() -> DateCell {
@@ -96,5 +105,19 @@ extension DestinyViewController {
 			cell.addressTextView.toolbarPlaceholder = address
 		}
 		return cell
+	}
+	
+	func generateButtonCell(withName buttonTitle: String) -> ButtonCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: ButtonCell.reuseIdentifier) as! ButtonCell
+		
+		cell.button.setTitle(buttonTitle, for: .normal)
+		cell.delegate = self
+		return cell
+	}
+}
+
+extension DestinyViewController: ButtonCellDelegate {
+	func didTapButton() {
+		print(#function)
 	}
 }

@@ -57,7 +57,7 @@ extension MapViewController {
 		placeholderMapView.addSubview(navigationMap)
 
 		navigationMap.showsUserLocation = true
-		navigationMap.setUserTrackingMode(.follow, animated: true)
+		navigationMap.setUserTrackingMode(.follow, animated: false)
 		navigationMap.delegate = self
 
 	}
