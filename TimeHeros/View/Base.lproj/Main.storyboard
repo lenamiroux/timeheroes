@@ -6,87 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Recompensas-->
-        <scene sceneID="0TU-Hu-0Ld">
-            <objects>
-                <viewController id="u2g-8E-6Ys" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aop-CL-85T">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mSl-E6-jqx"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Recompensas" id="CV7-36-en3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sNr-gp-cIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="886" y="2529"/>
-        </scene>
-        <!--Meus Destinos-->
-        <scene sceneID="Evn-BQ-BOo">
-            <objects>
-                <viewController id="XoK-Ro-x1R" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W6X-Xp-uaN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="23h-KN-qh0"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Meus Destinos" id="iIT-aT-ziU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hzs-RJ-YZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="886" y="1809"/>
-        </scene>
-        <!--Início-->
-        <scene sceneID="gqs-Nf-jKb">
-            <objects>
-                <viewController id="hfP-0A-atE" customClass="MapViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CGd-pZ-KCP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEZ-as-Wt5">
-                                <rect key="frame" x="0.0" y="7" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="qual o seu destino?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-tf-Y4E">
-                                <rect key="frame" x="28" y="391" width="319" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="knT-jI-lh1"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="width" secondItem="CGd-pZ-KCP" secondAttribute="width" id="CBX-QX-Mb4"/>
-                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="centerY" secondItem="klT-VK-MJ4" secondAttribute="centerY" id="F0P-4C-Ehk"/>
-                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="centerX" secondItem="klT-VK-MJ4" secondAttribute="centerX" id="Gv0-99-cEJ"/>
-                            <constraint firstItem="lEZ-as-Wt5" firstAttribute="height" secondItem="CGd-pZ-KCP" secondAttribute="height" id="MMK-SE-bff"/>
-                            <constraint firstItem="klT-VK-MJ4" firstAttribute="bottom" secondItem="oFC-tf-Y4E" secondAttribute="bottom" constant="167" id="TOe-pP-bUT"/>
-                            <constraint firstItem="oFC-tf-Y4E" firstAttribute="width" secondItem="CGd-pZ-KCP" secondAttribute="width" multiplier="0.85" id="mcc-Yc-wj6"/>
-                            <constraint firstItem="oFC-tf-Y4E" firstAttribute="centerX" secondItem="klT-VK-MJ4" secondAttribute="centerX" id="sOP-pp-0kv"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="klT-VK-MJ4"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Início" id="pwx-dK-vx0"/>
-                    <connections>
-                        <outlet property="destinyTextField" destination="oFC-tf-Y4E" id="WTK-w0-Una"/>
-                        <outlet property="placeholderMapView" destination="lEZ-as-Wt5" id="qaZ-rz-c3g"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t5v-7F-kuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="886" y="1143"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cie-BO-zwT">
             <objects>
@@ -96,32 +18,67 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8KZ-uU-i4D" kind="relationship" relationship="rootViewController" id="e46-8C-LgL"/>
+                        <segue destination="cEa-GA-mLA" kind="relationship" relationship="rootViewController" id="nE1-R2-MzS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVh-6j-LM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-938" y="1472"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="ESz-R8-jnh">
+        <!--Inicio-->
+        <scene sceneID="XIC-Kr-pHW">
             <objects>
-                <tabBarController id="8KZ-uU-i4D" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Clj-oC-Y3a"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NOl-zQ-qAs">
+                <viewControllerPlaceholder storyboardName="Inicio" id="lgr-rT-uKf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Início" selectedImage="selected_inicio" id="Lra-3G-ClY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wan-tr-gZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="1316"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VoF-p6-gDm">
+            <objects>
+                <tabBarController id="cEa-GA-mLA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lh1-1X-Lf5"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5OO-3A-GAN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hfP-0A-atE" kind="relationship" relationship="viewControllers" id="Yhk-hD-Uoa"/>
-                        <segue destination="XoK-Ro-x1R" kind="relationship" relationship="viewControllers" id="2j2-G7-w2r"/>
-                        <segue destination="u2g-8E-6Ys" kind="relationship" relationship="viewControllers" id="xPG-s5-Kah"/>
+                        <segue destination="lgr-rT-uKf" kind="relationship" relationship="viewControllers" id="R4c-tz-vBX"/>
+                        <segue destination="Xql-Jc-swD" kind="relationship" relationship="viewControllers" id="7K7-2a-9z7"/>
+                        <segue destination="YgR-xN-BBo" kind="relationship" relationship="viewControllers" id="aJQ-g5-45D"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pvw-Xq-qxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aq8-79-bnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="1473"/>
+            <point key="canvasLocation" x="-158" y="1471"/>
+        </scene>
+        <!--MeusDestinos-->
+        <scene sceneID="gLq-Vj-ijk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MeusDestinos" id="Xql-Jc-swD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meus Destinos" image="default_meus_destinos" id="FMy-cj-xZb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZhQ-od-E6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="1472"/>
+        </scene>
+        <!--Recompensas-->
+        <scene sceneID="BPe-ZT-y94">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Recompensas" id="YgR-xN-BBo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recompensas" image="default_recompensas" id="LtW-FY-f4e"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Arw-53-VIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="1621"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_meus_destinos" width="48" height="32"/>
+        <image name="default_recompensas" width="48" height="32"/>
+        <image name="selected_inicio" width="48" height="32"/>
+    </resources>
 </document>

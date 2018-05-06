@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UKS-H6-eRo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Início-->
+        <scene sceneID="I5x-Zf-fFf">
+            <objects>
+                <viewController id="UKS-H6-eRo" customClass="MapViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gn-67-a5v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-pP-o02">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="qual o seu destino?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7V-4H-Ykq">
+                                <rect key="frame" x="28" y="440" width="319" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Iit-dJ-F0N"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="height" secondItem="5gn-67-a5v" secondAttribute="height" id="80U-JH-ROV"/>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="width" secondItem="5gn-67-a5v" secondAttribute="width" id="Bd0-g1-jZS"/>
+                            <constraint firstItem="k7V-4H-Ykq" firstAttribute="width" secondItem="5gn-67-a5v" secondAttribute="width" multiplier="0.85" id="D8N-cb-qYh"/>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="centerX" secondItem="Gpf-ZJ-9zp" secondAttribute="centerX" id="Uga-Rh-lLx"/>
+                            <constraint firstItem="bX3-pP-o02" firstAttribute="centerY" secondItem="Gpf-ZJ-9zp" secondAttribute="centerY" id="b27-gb-DDb"/>
+                            <constraint firstItem="Gpf-ZJ-9zp" firstAttribute="bottom" secondItem="k7V-4H-Ykq" secondAttribute="bottom" constant="167" id="ffy-OG-zyS"/>
+                            <constraint firstItem="k7V-4H-Ykq" firstAttribute="centerX" secondItem="Gpf-ZJ-9zp" secondAttribute="centerX" id="pgu-V7-1RR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gpf-ZJ-9zp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Início" id="lz3-mQ-f5y"/>
+                    <connections>
+                        <outlet property="destinyTextField" destination="k7V-4H-Ykq" id="JQK-zu-T4S"/>
+                        <outlet property="placeholderMapView" destination="bX3-pP-o02" id="WET-mE-Yir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHM-jv-IZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="1143"/>
+        </scene>
+    </scenes>
+</document>

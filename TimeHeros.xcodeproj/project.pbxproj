@@ -18,6 +18,10 @@
 		9F3875D1209E722700DD101A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3875D0209E722700DD101A /* Error.swift */; };
 		9F3875D3209E7C5500DD101A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3875D2209E7C5500DD101A /* MapKit.framework */; };
 		9F3875D7209E8C4900DD101A /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3875D6209E8C4900DD101A /* DAO.swift */; };
+		9F62C4EC209EBF3F00DE88ED /* Inicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */; };
+		9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */; };
+		9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */; };
+		9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F1209EC37C00DE88ED /* TabBarController.swift */; };
 		9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */; };
 		9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */; };
 		9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */; };
@@ -56,6 +60,10 @@
 		9F3875D0209E722700DD101A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		9F3875D2209E7C5500DD101A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F3875D6209E8C4900DD101A /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inicio.storyboard; sourceTree = "<group>"; };
+		9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeusDestinos.storyboard; sourceTree = "<group>"; };
+		9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recompensas.storyboard; sourceTree = "<group>"; };
+		9F62C4F1209EC37C00DE88ED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Medium.ttf"; sourceTree = "<group>"; };
 		9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Black.ttf"; sourceTree = "<group>"; };
 		9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
@@ -181,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9F2DCBE3209E408300827CF0 /* MapViewController.swift */,
+				9F62C4F1209EC37C00DE88ED /* TabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,8 +205,11 @@
 		9F876104209E48310048BF82 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F62C4EB209EBF3F00DE88ED /* Inicio.storyboard */,
 				9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */,
 				9F2DCBE5209E408300827CF0 /* Main.storyboard */,
+				9F62C4ED209EC18800DE88ED /* MeusDestinos.storyboard */,
+				9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,10 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */,
+				9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */,
+				9F62C4EC209EBF3F00DE88ED /* Inicio.storyboard in Resources */,
 				9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */,
 				9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */,
 				9F2DCBE9209E408500827CF0 /* Assets.xcassets in Resources */,
 				9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */,
+				9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */,
 				9F2DCBE7209E408300827CF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3875D1209E722700DD101A /* Error.swift in Sources */,
+				9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */,
 				9FFF1205209E91D6008FBD5D /* GeocoderService.swift in Sources */,
 				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
 				9FFF1203209E8EC7008FBD5D /* URLProvider.swift in Sources */,
