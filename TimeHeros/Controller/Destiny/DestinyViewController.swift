@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class DestinyViewController: UIViewController {
 
@@ -31,7 +32,7 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 5
+		return 4
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -40,7 +41,7 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 			return DateCell.cellHeight
 		case 1, 2:
 			return PlaceCell.cellHeight
-		case 4:
+		case 3:
 			return ButtonCell.cellHeight
 		default:
 			return 80
@@ -53,14 +54,12 @@ extension DestinyViewController : UITableViewDelegate, UITableViewDataSource{
 		case 0:
 			return generateDateCell()
 		case 1:
-			return generatePlaceCell(address: "Indie Warehouse Coworking SHIN Ca2, 07, Brasília - DF", point: "A")
+			let coordiante = CLLocationCoordinate2D(latitude: -15.7177674, longitude: -47.8912654)
+			return generatePlaceCell(address: "Indie Warehouse Coworking SHIN Ca2, 07, Brasília - DF", point: "A", coordinate: coordiante)
 		case 2:
-			return generatePlaceCell(address: "Av. das Araucárias Q 205, 1655 Ed. Turmalina", point: "B")
+			let coordinate = CLLocationCoordinate2D(latitude: Double(40.732681), longitude: Double(-73.984341))
+			return generatePlaceCell(address: "Av. das Araucárias Q 205, 1655 Ed. Turmalina", point: "B", coordinate: coordinate)
 		case 3:
-			let cell = UITableViewCell()
-			cell.separatorInset.left = 1000
-			return cell
-		case 4:
 			return generateButtonCell(withName: "salvar tempo")
 		default:
 			return UITableViewCell()
@@ -92,7 +91,7 @@ extension DestinyViewController {
 		return cell
 	}
 	
-	func generatePlaceCell(address: String, point: String) -> PlaceCell {
+	func generatePlaceCell(address: String, point: String,  coordinate: CLLocationCoordinate2D?) -> PlaceCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: PlaceCell.reuseIdentifier) as! PlaceCell
 		
 		cell.pointLabel.text = point
@@ -104,6 +103,9 @@ extension DestinyViewController {
 			cell.lineView.isHidden = true
 			cell.addressTextView.toolbarPlaceholder = address
 		}
+		
+		cell.setupMap(withCoordinates: coordinate)
+		
 		return cell
 	}
 	
