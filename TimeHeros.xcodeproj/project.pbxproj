@@ -15,6 +15,8 @@
 		9F2DCBE9209E408500827CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE8209E408500827CF0 /* Assets.xcassets */; };
 		9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBEA209E408500827CF0 /* LaunchScreen.storyboard */; };
 		9F2DCBF7209E408600827CF0 /* TimeHerosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBF6209E408600827CF0 /* TimeHerosTests.swift */; };
+		9F3875D1209E722700DD101A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3875D0209E722700DD101A /* Error.swift */; };
+		9F3875D3209E7C5500DD101A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3875D2209E7C5500DD101A /* MapKit.framework */; };
 		9F876106209E490D0048BF82 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F876105209E490D0048BF82 /* Annotation.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		9F2DCBF2209E408500827CF0 /* TimeHerosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeHerosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBF6209E408600827CF0 /* TimeHerosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHerosTests.swift; sourceTree = "<group>"; };
 		9F2DCBF8209E408600827CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F3875D0209E722700DD101A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		9F3875D2209E7C5500DD101A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F876105209E490D0048BF82 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3875D3209E7C5500DD101A /* MapKit.framework in Frameworks */,
 				6CC5BA5B02C6A5149D7CDD0F /* Pods_TimeHeros.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +113,7 @@
 				9F2DCBE1209E408300827CF0 /* AppDelegate.swift */,
 				9F2DCBE8209E408500827CF0 /* Assets.xcassets */,
 				9F2DCBED209E408500827CF0 /* Info.plist */,
+				9F3875D0209E722700DD101A /* Error.swift */,
 			);
 			path = TimeHeros;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 		EC822E14CF2DFB1DC1B10945 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F3875D2209E7C5500DD101A /* MapKit.framework */,
 				961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */,
 				4B30FDB52EC90EFAC1C4D8B4 /* Pods_TimeHerosTests.framework */,
 			);
@@ -208,6 +215,11 @@
 				TargetAttributes = {
 					9F2DCBDD209E408300827CF0 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9F2DCBF1209E408500827CF0 = {
 						CreatedOnToolsVersion = 9.3;
@@ -334,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3875D1209E722700DD101A /* Error.swift in Sources */,
 				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
 				9F876106209E490D0048BF82 /* Annotation.swift in Sources */,
 				9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */,
@@ -498,10 +511,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
+				DEVELOPMENT_TEAM = 4GEJ8TUECN;
 				INFOPLIST_FILE = TimeHeros/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHeros;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHeros2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,10 +531,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
+				DEVELOPMENT_TEAM = 4GEJ8TUECN;
 				INFOPLIST_FILE = TimeHeros/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHeros;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHeros2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,7 +554,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHerosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHerosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -551,7 +576,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UH9P2DCMZ;
 				INFOPLIST_FILE = TimeHerosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TimeHerosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -17,27 +17,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYc-YW-pVS" customClass="MGLMapView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="657"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v10"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="VYc-YW-pVS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ArV-K3-AQf"/>
-                            <constraint firstItem="VYc-YW-pVS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gju-ni-APW"/>
-                            <constraint firstItem="VYc-YW-pVS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="SPm-1J-p3J"/>
-                            <constraint firstItem="VYc-YW-pVS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vhu-t3-38t"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="mapView" destination="VYc-YW-pVS" id="dM4-bL-a2k"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
