@@ -9,7 +9,8 @@ target 'TimeHeros' do
   # pod 'Mapbox-iOS-SDK', '~> 4.0'
   pod 'MapboxNavigation', '~> 0.16.2'
   pod 'Alamofire'
-
+  pod 'MapboxGeocoder.swift', '~> 0.8'
+  
   target 'TimeHerosTests' do
     inherit! :search_paths
     # Pods for testing

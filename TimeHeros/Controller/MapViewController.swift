@@ -36,6 +36,14 @@ class MapViewController: UIViewController {
 		addButton.addTarget(self, action: #selector(actionAddRouteToCoordinate), for: .touchUpInside)
 		
 		view.addSubview(addButton)
+		
+		
+		GeocoderService.search(byString: "Taguatinga Shopping") { (placeName, coordinates, error) in
+			
+			print(error)
+		}
+		
+		
 	}
 	
 }
