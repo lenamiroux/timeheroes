@@ -23,6 +23,9 @@
 		9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */; };
 		9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F1209EC37C00DE88ED /* TabBarController.swift */; };
 		9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */; };
+		9F62C4FA209EE82C00DE88ED /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62C4F8209EE82C00DE88ED /* DateCell.swift */; };
+		9F62C4FB209EE82C00DE88ED /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4F9209EE82C00DE88ED /* DateCell.xib */; };
+		9F62C4FF209EE8B500DE88ED /* Exo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */; };
 		9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */; };
 		9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */; };
 		9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */; };
@@ -66,6 +69,9 @@
 		9F62C4EF209EC1B500DE88ED /* Recompensas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recompensas.storyboard; sourceTree = "<group>"; };
 		9F62C4F1209EC37C00DE88ED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9F62C4F4209ECA2000DE88ED /* DestinyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyViewController.swift; sourceTree = "<group>"; };
+		9F62C4F8209EE82C00DE88ED /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		9F62C4F9209EE82C00DE88ED /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Light.ttf"; sourceTree = "<group>"; };
 		9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Medium.ttf"; sourceTree = "<group>"; };
 		9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Black.ttf"; sourceTree = "<group>"; };
 		9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo-Bold.ttf"; sourceTree = "<group>"; };
@@ -189,6 +195,23 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		9F62C4F7209EE80300DE88ED /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4FD209EE83C00DE88ED /* DateCell */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		9F62C4FD209EE83C00DE88ED /* DateCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F62C4F8209EE82C00DE88ED /* DateCell.swift */,
+				9F62C4F9209EE82C00DE88ED /* DateCell.xib */,
+			);
+			path = DateCell;
+			sourceTree = "<group>";
+		};
 		9F751DCB209EB95B009D5214 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +223,7 @@
 		9F751DCC209EB9B8009D5214 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				9F62C4FE209EE8B500DE88ED /* Exo-Light.ttf */,
 				9F751DCF209EB9CC009D5214 /* Exo-Black.ttf */,
 				9F751DD1209EB9D6009D5214 /* Exo-Bold.ttf */,
 				9F751DCD209EB9C4009D5214 /* Exo-Medium.ttf */,
@@ -228,6 +252,7 @@
 		9F876104209E48310048BF82 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F62C4F7209EE80300DE88ED /* Custom Cells */,
 				9F62C4F6209EE6F300DE88ED /* Storyboards */,
 			);
 			path = View;
@@ -335,12 +360,14 @@
 				9F751DD2209EB9D7009D5214 /* Exo-Bold.ttf in Resources */,
 				9F62C4EE209EC18800DE88ED /* MeusDestinos.storyboard in Resources */,
 				9F62C4EC209EBF3F00DE88ED /* Inicio.storyboard in Resources */,
+				9F62C4FF209EE8B500DE88ED /* Exo-Light.ttf in Resources */,
 				9F751DCE209EB9C5009D5214 /* Exo-Medium.ttf in Resources */,
 				9F2DCBEC209E408500827CF0 /* LaunchScreen.storyboard in Resources */,
 				9F2DCBE9209E408500827CF0 /* Assets.xcassets in Resources */,
 				9F751DD0209EB9CD009D5214 /* Exo-Black.ttf in Resources */,
 				9F62C4F0209EC1B500DE88ED /* Recompensas.storyboard in Resources */,
 				9F2DCBE7209E408300827CF0 /* Main.storyboard in Resources */,
+				9F62C4FB209EE82C00DE88ED /* DateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3875D1209E722700DD101A /* Error.swift in Sources */,
+				9F62C4FA209EE82C00DE88ED /* DateCell.swift in Sources */,
 				9F62C4F2209EC37C00DE88ED /* TabBarController.swift in Sources */,
 				9FFF1205209E91D6008FBD5D /* GeocoderService.swift in Sources */,
 				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
