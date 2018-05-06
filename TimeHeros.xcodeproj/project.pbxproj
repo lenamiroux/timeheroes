@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		46757182D06778C73F73EEA5 /* Pods_TimeHerosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B30FDB52EC90EFAC1C4D8B4 /* Pods_TimeHerosTests.framework */; };
 		6CC5BA5B02C6A5149D7CDD0F /* Pods_TimeHeros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */; };
+		9F0334A5209F0608005AC1CF /* ChoosesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334A4209F0608005AC1CF /* ChoosesViewController.swift */; };
+		9F0334A8209F072C005AC1CF /* ChoosesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334A7209F072C005AC1CF /* ChoosesService.swift */; };
+		9F0334AA209F0963005AC1CF /* Choose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0334A9209F0963005AC1CF /* Choose.swift */; };
 		9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE1209E408300827CF0 /* AppDelegate.swift */; };
 		9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE3209E408300827CF0 /* MapViewController.swift */; };
 		9F2DCBE7209E408300827CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2DCBE5209E408300827CF0 /* Main.storyboard */; };
@@ -55,6 +58,9 @@
 		6CAB0EAC959C8AAD1D488F97 /* Pods-TimeHerosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeHerosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeHerosTests/Pods-TimeHerosTests.release.xcconfig"; sourceTree = "<group>"; };
 		7EF10B8D8897BDD638FD880C /* Pods-TimeHeros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeHeros.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeHeros/Pods-TimeHeros.debug.xcconfig"; sourceTree = "<group>"; };
 		961DE7536E14EA453F8FC3E9 /* Pods_TimeHeros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeHeros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0334A4209F0608005AC1CF /* ChoosesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosesViewController.swift; sourceTree = "<group>"; };
+		9F0334A7209F072C005AC1CF /* ChoosesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosesService.swift; sourceTree = "<group>"; };
+		9F0334A9209F0963005AC1CF /* Choose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choose.swift; sourceTree = "<group>"; };
 		9F2DCBDE209E408300827CF0 /* TimeHeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeHeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2DCBE1209E408300827CF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2DCBE3209E408300827CF0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9F0334A6209F060E005AC1CF /* Chooses */ = {
+			isa = PBXGroup;
+			children = (
+				9F0334A4209F0608005AC1CF /* ChoosesViewController.swift */,
+			);
+			path = Chooses;
+			sourceTree = "<group>";
+		};
 		9F2DCBD5209E408300827CF0 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +185,7 @@
 				9F3875D5209E8C3500DD101A /* DAO */,
 				9FFF1202209E8EC7008FBD5D /* URLProvider.swift */,
 				9FFF1204209E91D6008FBD5D /* GeocoderService.swift */,
+				9F0334A7209F072C005AC1CF /* ChoosesService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -262,6 +277,7 @@
 		9F876102209E48120048BF82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9F0334A6209F060E005AC1CF /* Chooses */,
 				9F62C4F3209EC9E900DE88ED /* Destiny */,
 				9F2DCBE3209E408300827CF0 /* MapViewController.swift */,
 				9F62C4F1209EC37C00DE88ED /* TabBarController.swift */,
@@ -273,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				9F876105209E490D0048BF82 /* Annotation.swift */,
+				9F0334A9209F0963005AC1CF /* Choose.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -502,8 +519,11 @@
 				9FFF1205209E91D6008FBD5D /* GeocoderService.swift in Sources */,
 				9F2DCBE4209E408300827CF0 /* MapViewController.swift in Sources */,
 				9FFF1203209E8EC7008FBD5D /* URLProvider.swift in Sources */,
+				9F0334A8209F072C005AC1CF /* ChoosesService.swift in Sources */,
 				9F62C502209EEE9100DE88ED /* PlaceCell.swift in Sources */,
 				9F876106209E490D0048BF82 /* Annotation.swift in Sources */,
+				9F0334A5209F0608005AC1CF /* ChoosesViewController.swift in Sources */,
+				9F0334AA209F0963005AC1CF /* Choose.swift in Sources */,
 				9F2DCBE2209E408300827CF0 /* AppDelegate.swift in Sources */,
 				9F62C4F5209ECA2000DE88ED /* DestinyViewController.swift in Sources */,
 				9F3875D7209E8C4900DD101A /* DAO.swift in Sources */,

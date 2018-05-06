@@ -120,6 +120,6 @@ extension DestinyViewController {
 
 extension DestinyViewController: ButtonCellDelegate {
 	func didTapButton() {
-		print(#function)
+		performSegue(withIdentifier: "goToChooses", sender: self)
 	}
 }

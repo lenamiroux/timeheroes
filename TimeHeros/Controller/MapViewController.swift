@@ -33,13 +33,13 @@ class MapViewController: UIViewController {
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 
-		let addButton = UIButton(frame: CGRect(x: 0, y: 0, width: 75, height: 44))
-		addButton.backgroundColor = .black
-		addButton.setTitleColor(.white, for: .normal)
-		addButton.addTarget(self, action: #selector(actionAddRouteToCoordinate), for: .touchUpInside)
-		
-		view.addSubview(addButton)
-		
+//		let addButton = UIButton(frame: CGRect(x: 0, y: 0, width: 75, height: 44))
+//		addButton.backgroundColor = .black
+//		addButton.setTitleColor(.white, for: .normal)
+//		addButton.addTarget(self, action: #selector(actionAddRouteToCoordinate), for: .touchUpInside)
+//		
+//		view.addSubview(addButton)
+//		
 		
 //		GeocoderService.search(byString: "Taguatinga Shopping") { (placeName, coordinates, error) in
 //

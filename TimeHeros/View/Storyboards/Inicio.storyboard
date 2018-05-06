@@ -84,11 +84,46 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="R05-OH-b20" id="dvw-nP-F8g"/>
+                        <segue destination="KPO-pJ-hEq" kind="show" identifier="goToChooses" id="seI-ep-EU9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSp-lN-1bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1734" y="1143"/>
+        </scene>
+        <!--Chooses View Controller-->
+        <scene sceneID="n7J-Yc-YPF">
+            <objects>
+                <viewController id="KPO-pJ-hEq" customClass="ChoosesViewController" customModule="TimeHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b8C-Cp-qt5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xoQ-sP-hAD">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KPO-pJ-hEq" id="0m3-ih-ulN"/>
+                                    <outlet property="delegate" destination="KPO-pJ-hEq" id="PRm-85-BM0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="centerX" secondItem="Ff3-vx-I1Z" secondAttribute="centerX" id="7P1-uG-rwv"/>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="centerY" secondItem="Ff3-vx-I1Z" secondAttribute="centerY" id="Eci-fE-30y"/>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="width" secondItem="b8C-Cp-qt5" secondAttribute="width" id="IXd-N5-ve9"/>
+                            <constraint firstItem="xoQ-sP-hAD" firstAttribute="height" secondItem="b8C-Cp-qt5" secondAttribute="height" id="OuB-1z-t6l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ff3-vx-I1Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xoQ-sP-hAD" id="zSI-80-Xq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4H-b5-V9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2569" y="1143"/>
         </scene>
     </scenes>
 </document>
