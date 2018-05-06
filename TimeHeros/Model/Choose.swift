@@ -11,8 +11,8 @@ import UIKit
 class Choose: NSObject {
 
 
-	var meanDelayTime: Int?
-	var meanPerson: Int?
+	var meanDelayTime: Double?
+	var meanPerson: Float?
 	var timeSaved: Float?
 	var timeSuggested: String?
 	

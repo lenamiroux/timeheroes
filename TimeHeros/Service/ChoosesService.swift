@@ -7,25 +7,46 @@
 //
 
 import UIKit
+import Alamofire
 
 class ChoosesService: NSObject {
 
-	static func getChooses(completion: @escaping ()-> Void ) {
+	static func getChooses(completion: @escaping (_ choose:Choose?, _ error: CustomError?)-> Void ) {
 		
-		let url = ""
+		let now = Date()
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "HH:mm"
+		dateFormatter.locale = Locale(identifier: "pt_BR")
 		
-		DAO.Manager.request(url).responseJSON { (dataResponse) in
-			guard let values = dataResponse as? [String:Any] else {
+		let hourComponent = dateFormatter.string(from: now).components(separatedBy: ":")
+		
+		let hourString = hourComponent[0]
+		let minutesString = hourComponent[1]
+		
+		guard let hour = Int(hourString), let minutes = Int(minutesString) else {
+			let error = CustomError(titleError: "Ops!", messageError: "Não foi possível recuperar seus dados.")
+			completion(nil, error)
+			return
+		}
+		
+		let url = "http://18.191.32.54:8080/locations/\(hour)/\(minutes)"
+		
+		
+		
+		Alamofire.request(url).responseJSON { (dataResponse) in
+			guard let values = dataResponse.result.value as? [String:Any] else {
+				let error = CustomError(titleError: "Ops!", messageError: "Falhar ao tentar recuperar dados do servidor.")
+				completion(nil,error)
 				return
 			}
-
-//			{
-//				"mean_delay_time": 13.8, tempo ganho para vc
-//				"mean_person": 75781.25, numero pessoas
-//				"time_saved": 207.0, global time minutes
-//				"time_suggested": "23:00:00", hora de partida sugerida
-//			}
 			
+			let choose = Choose()
+			choose.meanDelayTime = values["mean_delay_time"] as? Double
+			choose.meanPerson = values["mean_person"] as? Float
+			choose.timeSaved = values["time_saved"] as? Float
+			choose.timeSuggested = values["time_suggested"] as? String
+
+			completion(choose, nil)
 			
 		}
 		
