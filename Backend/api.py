@@ -4,6 +4,7 @@
 import requests
 
 from flask import Flask, jsonify
+from flask import render_template
 import math
 import psycopg2
 import psycopg2.extras
@@ -21,6 +22,11 @@ lat=-105
 
 INCIDENTS_END_POINT="http://dev.virtualearth.net/REST/v1/Traffic/Incidents/37,-105,45,-94?key="+MS_KEY
 
+@app.route("/meus-destinos")
+def meus_destinos():
+    return render_template("meus_destinos.html")
+    
+    
 @app.route("/locations/<int:hour>/<int:minute>")
 def get_locations(hour, minute):
     pg = psycopg2.connect("dbname='timeheroes' user='postgres' host='localhost' password='postgres'")
